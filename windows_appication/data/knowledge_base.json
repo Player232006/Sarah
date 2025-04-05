@@ -1,0 +1,12 @@
+{
+  "initialized_at": 1743845739.6633255,
+  "performance_level": "balanced",
+  "ai_backend": "default",
+  "training_examples": 100,
+  "user_interactions": 16,
+  "common_topics": {},
+  "last_trained": null,
+  "trained_with": "samsum",
+  "training_format": "completion",
+  "training_time": 3.0036087036132812
+}

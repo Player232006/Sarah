@@ -1,0 +1,95 @@
+# Sarah AI - Ollama Integration Guide
+
+This guide explains how to integrate local Ollama models with Sarah AI. Ollama lets you run powerful large language models (LLMs) on your own computer.
+
+## 1. Install Ollama
+
+Before using Ollama with Sarah AI, you need to install Ollama on your system:
+
+1. Download and install Ollama from the official website: https://ollama.ai/
+2. Follow the installation instructions for your platform (Windows, macOS, or Linux)
+3. Verify Ollama is installed by running `ollama run llama3` in your terminal
+
+## 2. Configure Ollama Connection in Sarah AI
+
+Sarah AI connects to Ollama through its API. By default, Ollama runs on port 11434.
+
+1. In the Sarah AI interface, go to the "AI Select" tab
+2. Choose "Local Ollama" as the model type
+3. Enter the Ollama server URL (default is `http://localhost:11434`)
+4. Click "Test Connection" to verify the connection works
+
+If you're running Ollama on a different port or machine, update the URL accordingly.
+
+## 3. Working with Ollama Models
+
+### Pulling Models
+
+You can download Ollama models directly from the Sarah AI interface:
+
+1. In the "AI Select" tab, find the "Pull a model from Ollama library" section
+2. Enter the model name (e.g., `llama3`, `mistral`, `phi`)
+3. Click "Pull Ollama Model" to start the download
+4. Wait for the download to complete (may take several minutes depending on model size)
+
+Popular models to try: `llama3`, `llama3:8b`, `mistral`, `gemma:2b`, `phi`, `orca-mini`
+
+### Selecting Active Model
+
+After downloading models:
+
+1. In the "AI Select" tab, go to the "Available Ollama Models" section
+2. You'll see a list of all installed models
+3. Click the "Use [model name]" button next to the model you want to use
+4. The selected model will become active for all Sarah AI operations
+
+### Advanced Settings
+
+You can customize how the Ollama model functions:
+
+1. In the "AI Select" tab, open the "Ollama Advanced Settings" expander
+2. Adjust parameters like:
+   - Temperature (0.0-2.0): Controls randomness (higher = more creative)
+   - Context Length: Maximum input tokens (affects memory usage)
+   - Top P: Controls diversity via nucleus sampling
+3. Click "Apply Ollama Settings" to save your changes
+
+## 4. Troubleshooting
+
+### Connection Issues
+
+If Sarah AI can't connect to Ollama:
+
+1. Make sure Ollama is running on your system
+2. Check if the Ollama server URL is correct
+3. Verify there's no firewall blocking port 11434
+4. Try restarting the Ollama service
+
+### Model Loading Issues
+
+If a model won't load:
+
+1. Verify the model was downloaded correctly via Ollama CLI: `ollama list`
+2. Check system resources (memory, disk space)
+3. Try pulling the model directly through Ollama CLI: `ollama pull [model_name]`
+
+## 5. System Requirements
+
+Ollama models have varying resource requirements:
+
+- Small models (1-3B parameters): At least 4GB RAM
+- Medium models (7-13B parameters): At least 8GB RAM
+- Large models (30-70B parameters): At least 16GB RAM and dedicated GPU recommended
+
+Ensure your system meets these requirements for optimal performance.
+
+## 6. Command Reference
+
+Some useful Ollama CLI commands for reference:
+
+- `ollama list`: Show installed models
+- `ollama pull [model]`: Download a model
+- `ollama run [model]`: Run a model in interactive mode
+- `ollama rm [model]`: Remove a model
+
+For more information, visit the Ollama documentation: https://github.com/ollama/ollama

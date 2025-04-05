@@ -1,0 +1,30 @@
+*Application Name : Should be able to change in the settings tab anytime
+ *AI Name:* Sarah
+ *Gender: Female
+* *Focus:* General Knowledge
+* *Tone:* Humorous and sarcastic (yet empathetic when needed)
+* *AI Capabilities:*
+  - Converses with users
+  - Searches the internet
+  - Generates images from text descriptions
+  - Writes stories/articles
+  - Summarizes long texts
+  - Summerize PDFs and Documents provided
+  - Provides emotional support and listens actively
+  - Can be trained on datasets
+  - Should have deep learning capabilities
+  - Can analize data and can draw detailed graphs if asked
+  - Add Google Calendar integration to shara.
+  - Shara should Work with Google Sheets data.
+  - Shara should Send messages with Telegram.
+  - should also be able to upload files through the chat.
+  - *Evolvable:* Can be improved and updated later
+  *Application details:
+  - Should have a styalised ui with a simple and futuristic look to it
+  - Should have a good user interface to chat with her and has options on the left bar where training data can be put into and many more options
+  - All the code should contain appropriate comments so an amuture can also understand the code easily
+  - Should contain a readme file detailing the code in every file and the directory of files and where they should go in a folder
+  - The user interface should be clean and look futuristic, it should have a left bar which should have icons for, on clicking brings up the chat with Sarah, on clicking brings up a tab where we can select a training dataset to train the model furthur from the local storage or online or other sources, on clicking brings up a settings tab where we can change the themes of the application and change the color scheme.
+  - in the settings tab there should also be an option to hoste a webserver and the webserver url si automatically generated and shown to the user, on the webserver the ui should be exactly the same as in the application and when the webserver is turned on the pc application should not close.
+  - in the left bar ther should be an option to add chats with shara and can have multiple different chats with her simltainously.  
+  - appropriate labeling should be done on the files
